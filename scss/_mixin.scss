@@ -1,0 +1,184 @@
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centerX-absolute {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin centerY-absolute {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin center-margin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin center-height($height) {
+  height: $height;
+  line-height: $height;
+}
+
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+@mixin height-hidden {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+@mixin height-visible {
+  height: fit-content;
+  opacity: 1;
+}
+
+@mixin img {
+  width: 100%;
+  height: auto;
+}
+
+@mixin responsive-bgimg($padding) {
+  width: 100%;
+  height: 0;
+  padding-top: $padding;
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+
+  @content;
+  //add background-image: url();
+}
+
+@mixin box-highlight {
+  box-shadow: 1px 1px 2px black, 0 0 0.5em $orange, 0 0 0.1em $orange;
+  box-shadow: 1px 1px 2px black, 0 0 0.5em #fff, 0 0 0.1em #fff;
+}
+
+@mixin text-highlight {
+  text-shadow: 1px 1px 2px black, 0 0 1em $orange, 0 0 0.2em $orange;
+  text-shadow: 1px 1px 2px black, 0 0 1em $sky, 0 0 0.2em $sky;
+}
+
+@mixin btn-glossy {
+  @include box-highlight;
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  color: whitesmoke;
+  background-color: transparent;
+  transition: all 1s;
+
+  @media (hover: hover) {
+    &:hover {
+      z-index: 999;
+      color: black;
+      background-color: #fff;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    color: whitesmoke;
+    background: rgb(117, 117, 117);
+    transform: translatex(-300px) skewX(30deg);
+    // transform: skewX(15deg);
+    transition: all 1s;
+  }
+
+  @media (hover: hover) {
+    &:hover::before {
+      transform: translateX(0);
+      color: black;
+      background: transparent;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: whitesmoke;
+    background: rgb(32, 32, 32);
+    transform: translatex(-300px) skewX(30deg);
+    /* transform: skewX(15deg); */
+    transition: all 2s;
+  }
+
+  @media (hover: hover) {
+    &:hover::after {
+      color: black;
+      background: transparent;
+      transform: translateX(0);
+    }
+  }
+}
+
+@mixin gradient-text {
+  --color-primary: hsl(310, 100%, 65%);
+  --color-secondary: hsl(160, 100%, 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(35deg, var(--color-primary), var(--color-secondary));
+}
+
+@mixin gradient-stroke {
+  --color-background: #000119;
+  --stroke-width: calc(1em / 16);
+
+  background-clip: text;
+  background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+  color: var(--color-background);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: var(--stroke-width);
+}

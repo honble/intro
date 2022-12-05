@@ -1,0 +1,16 @@
+html {
+  font-size: $rootfont-size;
+  font-family: $basefont-sans;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: $medium;
+  word-break: keep-all;
+  background: url(../images/bg-img_2000.jpg) no-repeat center center / cover;
+}

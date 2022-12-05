@@ -1,0 +1,1123 @@
+html {
+  font-size: 6.25%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 16rem;
+  word-break: keep-all;
+  background: url(../images/bg-img_2000.jpg) no-repeat center center/cover;
+}
+
+.body-inner {
+  max-width: 1680px;
+  height: 98%;
+  margin: 1% auto;
+  padding: 50px;
+}
+
+.ku-logo {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+}
+.ku-logo img {
+  width: 100%;
+}
+
+.ly-main {
+  width: 100%;
+  margin: 50px auto;
+}
+.ly-main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.ly-name {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.ku-name {
+  height: 50%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1.1;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  letter-spacing: -5rem;
+  /* IE10+ */
+  /* IE9,10 */
+}
+@media screen and (max-width:1024px) {
+  .ku-name {
+    font-size: 80rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .ku-name {
+    display: none;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ku-name::before {
+    color: #fb5e00;
+  }
+}
+@media screen and (min-width: 0\0 ) {
+  .ku-name::before {
+    color: #fb5e00;
+  }
+}
+.ku-name span {
+  --color-primary: hsl(310, 100%, 65%);
+  --color-secondary: hsl(160, 100%, 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(35deg, var(--color-primary), var(--color-secondary));
+  display: inline-block;
+  /* Kyungnam */
+  /* University */
+}
+.ku-name span:first-of-type {
+  z-index: 1;
+}
+.ku-name span:last-of-type {
+  position: absolute;
+  top: 25px;
+  left: -70px;
+  opacity: 0.3;
+  transform: rotate(180deg);
+}
+@media screen and (max-width:1280px) {
+  .ku-name span:last-of-type {
+    position: absolute;
+    left: -50px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .ku-name span:last-of-type {
+    top: 1%;
+    right: 75%;
+  }
+}
+
+.ly-notice {
+  float: left;
+  width: 20%;
+  margin-right: 20px;
+}
+@media screen and (max-width:1280px) {
+  .ly-notice {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width:768px) {
+  .ly-notice {
+    float: none;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.notice {
+  position: relative;
+}
+.notice::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 115px;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  z-index: -1;
+  background-color: rgba(228, 0, 0, 0.7);
+  --color-primary: hsl(310, 100%, 65%);
+  --color-secondary: hsl(160, 100%, 65%);
+  background-image: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+}
+@media screen and (max-width:1280px) {
+  .notice::before {
+    height: 50px;
+    top: -2px;
+  }
+}
+.notice-para {
+  margin-bottom: 20rem;
+  font-size: 24rem;
+  line-height: 1.6;
+  color: white;
+}
+@media screen and (max-width:1280px) {
+  .notice-para {
+    line-height: 1.2;
+  }
+}
+.notice-para:last-of-type {
+  margin-bottom: 60rem;
+}
+.notice-para span {
+  display: block;
+}
+@media screen and (max-width:1280px) {
+  .notice-para span {
+    display: inline-block;
+  }
+}
+.notice-year {
+  text-shadow: 1px 1px 2px black, 0 0 1em #fb5e00, 0 0 0.2em #fb5e00;
+  text-shadow: 1px 1px 2px black, 0 0 1em #99c8c8, 0 0 0.2em #99c8c8;
+  font-size: 36rem;
+  font-family: "S-CoreDream-6Bold";
+  font-family: "S-CoreDream-9Black";
+}
+@media screen and (max-width:768px) {
+  .notice-time, .notice-noti {
+    --color-primary: hsl(310, 100%, 65%);
+    --color-secondary: hsl(160, 100%, 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(35deg, var(--color-primary), var(--color-secondary));
+  }
+}
+
+.btn-glossy {
+  box-shadow: 1px 1px 2px black, 0 0 0.5em #fb5e00, 0 0 0.1em #fb5e00;
+  box-shadow: 1px 1px 2px black, 0 0 0.5em #fff, 0 0 0.1em #fff;
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  color: whitesmoke;
+  background-color: transparent;
+  transition: all 1s;
+  display: inline-block;
+  width: 80%;
+  height: 40px;
+  padding-left: 15rem;
+  padding-right: 5rem;
+  font-size: 20rem;
+  line-height: 40px;
+}
+@media (hover: hover) {
+  .btn-glossy:hover {
+    z-index: 999;
+    color: black;
+    background-color: #fff;
+  }
+}
+.btn-glossy::before {
+  content: "";
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  color: whitesmoke;
+  background: rgb(117, 117, 117);
+  transform: translatex(-300px) skewX(30deg);
+  transition: all 1s;
+}
+@media (hover: hover) {
+  .btn-glossy:hover::before {
+    transform: translateX(0);
+    color: black;
+    background: transparent;
+  }
+}
+.btn-glossy::after {
+  content: "";
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: whitesmoke;
+  background: rgb(32, 32, 32);
+  transform: translatex(-300px) skewX(30deg);
+  /* transform: skewX(15deg); */
+  transition: all 2s;
+}
+@media (hover: hover) {
+  .btn-glossy:hover::after {
+    color: black;
+    background: transparent;
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width:1280px) {
+  .btn-glossy {
+    width: 25%;
+    padding-left: 0rem;
+    padding-right: 20rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width:1024px) {
+  .btn-glossy {
+    width: 35%;
+  }
+}
+@media screen and (max-width:768px) {
+  .btn-glossy {
+    width: 45%;
+    padding-left: 0;
+    padding-right: 20rem;
+    font-size: 18rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width:480px) {
+  .btn-glossy {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 20rem;
+  }
+}
+.btn-glossy:first-of-type {
+  margin-bottom: 15rem;
+}
+@media screen and (max-width:1280px) {
+  .btn-glossy:first-of-type {
+    margin-right: 5rem;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width:480px) {
+  .btn-glossy:first-of-type {
+    margin-bottom: 15rem;
+  }
+}
+@media screen and (max-width:480px) {
+  .btn-glossy:last-of-type {
+    padding-left: 20rem;
+  }
+}
+.btn-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../images/main_icon8_on.png) no-repeat center/100%;
+}
+.btn-glossy:hover .btn-icon {
+  background-image: url(../images/main_icon8_on_black.png);
+}
+.btn-ttl {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: top;
+}
+
+.ly-card {
+  float: right;
+  width: 55%;
+  min-width: 150px;
+}
+@media screen and (max-width:1280px) {
+  .ly-card {
+    width: 80%;
+  }
+}
+@media screen and (max-width:768px) {
+  .ly-card {
+    width: 100%;
+    float: none;
+  }
+}
+
+.card {
+  width: 100%;
+  position: relative;
+}
+.card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.card::before {
+  --top-bottom: 30px;
+  --left-right: 20px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: var(--top-bottom);
+  left: var(--left-right);
+  border-right: var(--left-right) solid rgba(245, 132, 181, 0.5);
+  border-bottom: var(--top-bottom) solid rgba(245, 132, 181, 0.6);
+}
+
+.card-item {
+  float: left;
+  width: 33.3333333333%;
+  height: 200px;
+  padding: 2em;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width:768px) {
+  .card-item {
+    width: 100%;
+    height: 150px;
+  }
+}
+.card-item::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #f584b5;
+}
+.card-item:nth-of-type(3n)::after {
+  display: none;
+}
+@media screen and (max-width:1280px) {
+  .card-item:nth-of-type(2n)::after {
+    display: block;
+  }
+  .card-item:last-of-type::after {
+    display: block;
+  }
+  .card-item:nth-of-type(3n)::after {
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+  .card-item::after {
+    display: block !important;
+    width: 70%;
+    height: 3px;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+  }
+  .card-item:last-of-type::after {
+    display: none !important;
+  }
+}
+
+.card-link {
+  display: block;
+  width: 70rem;
+  height: 70rem;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 100;
+  background: url(../images/arrow_outward_FILL0_wght400_GRAD0_opsz48_pink.png) no-repeat center/cover;
+}
+@media screen and (max-width:1024px) {
+  .card-link {
+    width: 55rem;
+    height: 55rem;
+    top: 25px;
+    right: 0;
+  }
+}
+@media screen and (max-width:768px) {
+  .card-link {
+    width: 70rem;
+    height: 70rem;
+    top: 20px;
+    right: 0;
+  }
+}
+@media screen and (max-width:480px) {
+  .card-link {
+    width: 45rem;
+    height: 45rem;
+    top: 30px;
+    right: 10px;
+  }
+}
+@media (hover: hover) {
+  .card-link:hover {
+    background-image: url(../images/arrow_outward_FILL0_wght400_GRAD0_opsz48_red.png);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .card-body {
+    margin-right: 35rem;
+  }
+}
+
+.card-ttl {
+  display: block;
+  font-size: 20rem;
+  line-height: 1.4;
+  color: #99c8c8;
+}
+@media screen and (max-width:768px) {
+  .card-ttl {
+    display: inline-block;
+    font-size: 18rem;
+  }
+}
+.card-ttl:last-of-type {
+  margin-bottom: 10rem;
+}
+
+.card-txt {
+  font-size: 16px;
+  color: #f2e9cc;
+}
+
+.ly-footer {
+  float: right;
+  margin-top: 50px;
+}
+
+.footer-info {
+  width: 60%;
+  margin-left: auto;
+  text-align: center;
+}
+.footer-info::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width:1280px) {
+  .footer-info {
+    width: 70%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .footer-info {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 880px) {
+  .footer-info {
+    width: 75%;
+  }
+}
+@media screen and (max-width:768px) {
+  .footer-info {
+    width: 100%;
+  }
+}
+.footer-info li {
+  float: left;
+  font-size: 14rem;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: -0.5rem;
+  color: rgba(242, 233, 204, 0.5);
+}
+@media screen and (max-width:768px) {
+  .footer-info li {
+    float: none;
+  }
+}
+
+.snowflake {
+  --size: 1vw;
+  width: var(--size);
+  height: var(--size);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  top: -5vh;
+}
+
+@-webkit-keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+  }
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+  }
+}
+.snowflake:nth-child(1) {
+  --size: 0.8vw;
+  --left-ini: -8vw;
+  --left-end: 6vw;
+  left: 1vw;
+  -webkit-animation: snowfall 8s linear infinite;
+          animation: snowfall 8s linear infinite;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+
+.snowflake:nth-child(2) {
+  --size: 1vw;
+  --left-ini: -5vw;
+  --left-end: 8vw;
+  left: 93vw;
+  -webkit-animation: snowfall 15s linear infinite;
+          animation: snowfall 15s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+.snowflake:nth-child(3) {
+  --size: 0.4vw;
+  --left-ini: 2vw;
+  --left-end: 4vw;
+  left: 74vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+.snowflake:nth-child(4) {
+  --size: 0.8vw;
+  --left-ini: -2vw;
+  --left-end: 4vw;
+  left: 28vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+
+.snowflake:nth-child(5) {
+  --size: 0.4vw;
+  --left-ini: -6vw;
+  --left-end: -9vw;
+  left: 93vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+
+.snowflake:nth-child(6) {
+  --size: 0.2vw;
+  --left-ini: 4vw;
+  --left-end: -8vw;
+  left: 38vw;
+  -webkit-animation: snowfall 8s linear infinite;
+          animation: snowfall 8s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.snowflake:nth-child(7) {
+  --size: 0.6vw;
+  --left-ini: -4vw;
+  --left-end: -2vw;
+  left: 96vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.snowflake:nth-child(8) {
+  --size: 0.6vw;
+  --left-ini: -9vw;
+  --left-end: -5vw;
+  left: 79vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+
+.snowflake:nth-child(9) {
+  --size: 1vw;
+  --left-ini: -2vw;
+  --left-end: 8vw;
+  left: 15vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+
+.snowflake:nth-child(10) {
+  --size: 0.6vw;
+  --left-ini: 6vw;
+  --left-end: 1vw;
+  left: 26vw;
+  -webkit-animation: snowfall 6s linear infinite;
+          animation: snowfall 6s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.snowflake:nth-child(11) {
+  --size: 0.6vw;
+  --left-ini: -9vw;
+  --left-end: 6vw;
+  left: 68vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.snowflake:nth-child(12) {
+  --size: 1vw;
+  --left-ini: -1vw;
+  --left-end: -7vw;
+  left: 89vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.snowflake:nth-child(13) {
+  --size: 0.4vw;
+  --left-ini: -5vw;
+  --left-end: 6vw;
+  left: 72vw;
+  -webkit-animation: snowfall 15s linear infinite;
+          animation: snowfall 15s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.snowflake:nth-child(14) {
+  --size: 0.2vw;
+  --left-ini: 1vw;
+  --left-end: 9vw;
+  left: 92vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.snowflake:nth-child(15) {
+  --size: 0.4vw;
+  --left-ini: 4vw;
+  --left-end: 7vw;
+  left: 98vw;
+  -webkit-animation: snowfall 6s linear infinite;
+          animation: snowfall 6s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.snowflake:nth-child(16) {
+  --size: 0.4vw;
+  --left-ini: 2vw;
+  --left-end: 4vw;
+  left: 74vw;
+  -webkit-animation: snowfall 8s linear infinite;
+          animation: snowfall 8s linear infinite;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+
+.snowflake:nth-child(17) {
+  --size: 0.6vw;
+  --left-ini: 0vw;
+  --left-end: 3vw;
+  left: 25vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.snowflake:nth-child(18) {
+  --size: 0.6vw;
+  --left-ini: -6vw;
+  --left-end: -9vw;
+  left: 27vw;
+  -webkit-animation: snowfall 15s linear infinite;
+          animation: snowfall 15s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.snowflake:nth-child(19) {
+  --size: 0.8vw;
+  --left-ini: -1vw;
+  --left-end: 8vw;
+  left: 44vw;
+  -webkit-animation: snowfall 15s linear infinite;
+          animation: snowfall 15s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.snowflake:nth-child(20) {
+  --size: 0.6vw;
+  --left-ini: -7vw;
+  --left-end: 9vw;
+  left: 55vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.snowflake:nth-child(21) {
+  --size: 0.6vw;
+  --left-ini: 0vw;
+  --left-end: 5vw;
+  left: 77vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.snowflake:nth-child(22) {
+  --size: 0.6vw;
+  --left-ini: 6vw;
+  --left-end: 6vw;
+  left: 23vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.snowflake:nth-child(23) {
+  --size: 0.4vw;
+  --left-ini: -9vw;
+  --left-end: -2vw;
+  left: 43vw;
+  -webkit-animation: snowfall 15s linear infinite;
+          animation: snowfall 15s linear infinite;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+
+.snowflake:nth-child(24) {
+  --size: 0.8vw;
+  --left-ini: 1vw;
+  --left-end: 4vw;
+  left: 21vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.snowflake:nth-child(25) {
+  --size: 0.2vw;
+  --left-ini: 5vw;
+  --left-end: -7vw;
+  left: 94vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+.snowflake:nth-child(26) {
+  --size: 0.4vw;
+  --left-ini: 6vw;
+  --left-end: -5vw;
+  left: 66vw;
+  -webkit-animation: snowfall 7s linear infinite;
+          animation: snowfall 7s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.snowflake:nth-child(27) {
+  --size: 1vw;
+  --left-ini: 0vw;
+  --left-end: -8vw;
+  left: 65vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+
+.snowflake:nth-child(28) {
+  --size: 1vw;
+  --left-ini: -7vw;
+  --left-end: 0vw;
+  left: 46vw;
+  -webkit-animation: snowfall 11s linear infinite;
+          animation: snowfall 11s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.snowflake:nth-child(29) {
+  --size: 1vw;
+  --left-ini: 6vw;
+  --left-end: 2vw;
+  left: 12vw;
+  -webkit-animation: snowfall 6s linear infinite;
+          animation: snowfall 6s linear infinite;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+
+.snowflake:nth-child(30) {
+  --size: 0.8vw;
+  --left-ini: 1vw;
+  --left-end: -4vw;
+  left: 52vw;
+  -webkit-animation: snowfall 11s linear infinite;
+          animation: snowfall 11s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+.snowflake:nth-child(31) {
+  --size: 0.2vw;
+  --left-ini: -1vw;
+  --left-end: -3vw;
+  left: 39vw;
+  -webkit-animation: snowfall 7s linear infinite;
+          animation: snowfall 7s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+.snowflake:nth-child(32) {
+  --size: 0.2vw;
+  --left-ini: -9vw;
+  --left-end: -6vw;
+  left: 71vw;
+  -webkit-animation: snowfall 11s linear infinite;
+          animation: snowfall 11s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.snowflake:nth-child(33) {
+  --size: 1vw;
+  --left-ini: -5vw;
+  --left-end: 6vw;
+  left: 18vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+.snowflake:nth-child(34) {
+  --size: 0.8vw;
+  --left-ini: 0vw;
+  --left-end: 3vw;
+  left: 81vw;
+  -webkit-animation: snowfall 11s linear infinite;
+          animation: snowfall 11s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.snowflake:nth-child(35) {
+  --size: 0.8vw;
+  --left-ini: -6vw;
+  --left-end: 5vw;
+  left: 17vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.snowflake:nth-child(36) {
+  --size: 0.4vw;
+  --left-ini: -4vw;
+  --left-end: 10vw;
+  left: 72vw;
+  -webkit-animation: snowfall 11s linear infinite;
+          animation: snowfall 11s linear infinite;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+.snowflake:nth-child(37) {
+  --size: 0.4vw;
+  --left-ini: 0vw;
+  --left-end: 5vw;
+  left: 36vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.snowflake:nth-child(38) {
+  --size: 0.2vw;
+  --left-ini: -7vw;
+  --left-end: 4vw;
+  left: 7vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.snowflake:nth-child(39) {
+  --size: 1vw;
+  --left-ini: 0vw;
+  --left-end: -2vw;
+  left: 94vw;
+  -webkit-animation: snowfall 9s linear infinite;
+          animation: snowfall 9s linear infinite;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+.snowflake:nth-child(40) {
+  --size: 0.4vw;
+  --left-ini: 9vw;
+  --left-end: 3vw;
+  left: 94vw;
+  -webkit-animation: snowfall 13s linear infinite;
+          animation: snowfall 13s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.snowflake:nth-child(41) {
+  --size: 1vw;
+  --left-ini: -4vw;
+  --left-end: -8vw;
+  left: 39vw;
+  -webkit-animation: snowfall 12s linear infinite;
+          animation: snowfall 12s linear infinite;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+.snowflake:nth-child(42) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: 10vw;
+  left: 92vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.snowflake:nth-child(43) {
+  --size: 0.2vw;
+  --left-ini: -5vw;
+  --left-end: -4vw;
+  left: 82vw;
+  -webkit-animation: snowfall 11s linear infinite;
+          animation: snowfall 11s linear infinite;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+.snowflake:nth-child(44) {
+  --size: 0.6vw;
+  --left-ini: -9vw;
+  --left-end: 3vw;
+  left: 60vw;
+  -webkit-animation: snowfall 7s linear infinite;
+          animation: snowfall 7s linear infinite;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.snowflake:nth-child(45) {
+  --size: 0.4vw;
+  --left-ini: 3vw;
+  --left-end: 7vw;
+  left: 68vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+
+.snowflake:nth-child(46) {
+  --size: 0.2vw;
+  --left-ini: 2vw;
+  --left-end: 2vw;
+  left: 39vw;
+  -webkit-animation: snowfall 7s linear infinite;
+          animation: snowfall 7s linear infinite;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+.snowflake:nth-child(47) {
+  --size: 0.4vw;
+  --left-ini: -8vw;
+  --left-end: -8vw;
+  left: 8vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+.snowflake:nth-child(48) {
+  --size: 0.6vw;
+  --left-ini: -3vw;
+  --left-end: -8vw;
+  left: 4vw;
+  -webkit-animation: snowfall 7s linear infinite;
+          animation: snowfall 7s linear infinite;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.snowflake:nth-child(49) {
+  --size: 0.8vw;
+  --left-ini: 10vw;
+  --left-end: -3vw;
+  left: 100vw;
+  -webkit-animation: snowfall 10s linear infinite;
+          animation: snowfall 10s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.snowflake:nth-child(50) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: 7vw;
+  left: 40vw;
+  -webkit-animation: snowfall 8s linear infinite;
+          animation: snowfall 8s linear infinite;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+/* added small blur every 6 snowflakes*/
+.snowflake:nth-child(6n) {
+  filter: blur(1px);
+}/*# sourceMappingURL=style.css.map */
