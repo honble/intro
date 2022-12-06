@@ -290,12 +290,15 @@
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background: url(../images/main_icon8_on.png) no-repeat center / 100%;
+  }
+
+  .svg-home {
+    fill: $color-primary03;
   }
 
   @media (hover: hover) {
-    &-glossy:hover .btn-icon {
-      background-image: url(../images/main_icon8_on_black.png);
+    &-glossy:hover .svg-home {
+      fill: $color-secondary03;
     }
   }
 
@@ -412,25 +415,15 @@
     width: 60rem;
     height: 60rem;
   }
-
-  /* IE10+ */
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    &:hover {
-    }
-  }
-
-  /* IE9,10 */
-  @media screen and (min-width: 0\0) {
-    &:hover {
-    }
-  }
 }
 
-svg .cls-1 {
+.svg-arrow {
   fill: #f8ffae;
 
-  &:hover {
-    fill: #2c3e50;
+  @media (hover: hover) {
+    &:hover {
+      fill: #2c3e50;
+    }
   }
 }
 
