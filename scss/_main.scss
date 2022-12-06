@@ -58,12 +58,14 @@
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         transform: none;
         color: $color-secondary02;
+        background-image: none;
       }
 
       /* IE9,10 */
       @media screen and (min-width: 0\0) {
         transform: none;
         color: $color-secondary02;
+        background-image: none;
       }
     }
 
@@ -90,6 +92,7 @@
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         transform: none;
         color: $color-secondary01;
+        background-image: none;
         opacity: 1;
       }
 
@@ -97,6 +100,7 @@
       @media screen and (min-width: 0\0) {
         transform: none;
         color: $color-secondary01;
+        background-image: none;
         opacity: 1;
       }
     }
@@ -181,6 +185,7 @@
       transform: none;
       // color: $color-secondary02;
       color: $color-primary02;
+      background-image: none;
       opacity: 1;
     }
 
@@ -189,6 +194,7 @@
       transform: none;
       // color: $color-secondary02;
       color: $color-primary02;
+      background-image: none;
       opacity: 1;
     }
   }
