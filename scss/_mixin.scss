@@ -113,7 +113,7 @@
     &:hover {
       z-index: 999;
       color: black;
-      background-color: #fff;
+      background-color: whitesmoke;
     }
   }
 
@@ -164,12 +164,10 @@
   }
 }
 
-@mixin gradient-text {
-  --color-primary: hsl(310, 100%, 65%);
-  --color-secondary: hsl(160, 100%, 65%);
+@mixin gradient-text($color-primary, $color-secondary) {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(35deg, var(--color-primary), var(--color-secondary));
+  background-image: linear-gradient(35deg, $color-primary, $color-secondary);
 }
 
 @mixin gradient-stroke {
@@ -181,4 +179,13 @@
   color: var(--color-background);
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: var(--stroke-width);
+}
+
+@mixin glass-morphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
