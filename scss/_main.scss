@@ -293,8 +293,10 @@
     background: url(../images/main_icon8_on.png) no-repeat center / 100%;
   }
 
-  &-glossy:hover .btn-icon {
-    background-image: url(../images/main_icon8_on_black.png);
+  @media (hover: hover) {
+    &-glossy:hover .btn-icon {
+      background-image: url(../images/main_icon8_on_black.png);
+    }
   }
 
   &-ttl {
