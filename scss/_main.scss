@@ -431,8 +431,22 @@
   width: 50%;
   height: 50%;
   top: 40%;
-  left: 50%;
+  right: 0;
   transform: translate(-50%, -50%);
+
+  /* IE10+ */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    & {
+      top: 50%;
+    }
+  }
+
+  /* IE9,10 */
+  @media screen and (min-width: 0\0) {
+    & {
+      top: 50%;
+    }
+  }
 }
 .svg-plus {
   fill: rgba($color: #fff, $alpha: 0.2);
