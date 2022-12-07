@@ -428,26 +428,20 @@
 }
 
 .plus-link {
-  width: 50%;
-  height: 50%;
-  top: 40%;
-  right: 0;
+  display: block;
+  width: 100rem;
+  height: 100rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 
-  /* IE10+ */
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    & {
-      top: 50%;
-    }
-  }
-
-  /* IE9,10 */
-  @media screen and (min-width: 0\0) {
-    & {
-      top: 50%;
-    }
+  @media screen and (max-width: 1580px) {
+    width: 70rem;
+    height: 70rem;
   }
 }
+
 .svg-plus {
   fill: rgba($color: #fff, $alpha: 0.2);
 }
