@@ -30,9 +30,8 @@
 .ku-name {
   height: 50%;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
   font-size: 100px;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 1.1;
   writing-mode: vertical-lr;
   letter-spacing: -5rem;
@@ -174,8 +173,7 @@
   &-year {
     @include text-highlight;
     font-size: 36rem;
-    font-family: 'S-CoreDream-6Bold';
-    font-family: 'S-CoreDream-9Black';
+    font-weight: 900;
   }
 
   &-time,
@@ -503,7 +501,7 @@
   li {
     float: left;
     font-size: 14rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.5;
     letter-spacing: -0.5rem;
     color: rgba($color: $beige, $alpha: 0.5);
