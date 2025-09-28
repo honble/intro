@@ -1,0 +1,108 @@
+.svg {
+  position: fixed;
+
+  @include resp-pc(1023px) {
+    z-index: 10;
+  }
+
+  &.mount {
+    left: 0;
+    bottom: 0;
+  }
+
+  &.trees {
+  }
+
+  &.tree_left {
+    width: 13%;
+    left: 0;
+    bottom: 10px;
+
+    .tree_s {
+      width: 60%;
+      position: absolute;
+      right: -40px;
+      bottom: 0;
+    }
+
+    .tree_l {
+      width: 100%;
+    }
+  }
+
+  &.tree_right {
+    width: 15%;
+    right: 0;
+    bottom: 10px;
+
+    .tree_s {
+      width: 80%;
+      position: absolute;
+      left: -50px;
+      bottom: 0;
+    }
+
+    .tree_l {
+      width: 100%;
+      position: relative;
+    }
+
+    .lights {
+      width: 70%;
+      position: absolute;
+      left: 50%;
+      bottom: 40%;
+      transform: translateX(-50%);
+
+      .bulb {
+        fill-opacity: 100%;
+        filter: drop-shadow(10px 10px 20px yellow);
+
+        animation-name: even-bulb;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:nth-child(odd) {
+          animation-name: odd-bulb;
+          animation-delay: 1s;
+        }
+      }
+
+      @keyframes even-bulb {
+        0%,
+        100% {
+          fill-opacity: 100%;
+          filter: drop-shadow(10px 10px 20px yellow);
+        }
+
+        50% {
+          fill-opacity: 25%;
+          filter: drop-shadow(2px 2px 4px yellow);
+        }
+      }
+
+      @keyframes odd-bulb {
+        50% {
+          fill-opacity: 25%;
+          filter: drop-shadow(2px 2px 4px yellow);
+        }
+
+        0%,
+        100% {
+          fill-opacity: 100%;
+          filter: drop-shadow(10px 10px 20px yellow);
+        }
+      }
+    }
+
+    .snowman {
+      width: 50%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      filter: drop-shadow(1px 1px 10px #c7d9d7);
+    }
+  }
+}
